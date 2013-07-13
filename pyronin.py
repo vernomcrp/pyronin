@@ -11,7 +11,10 @@ class Siraset(object):
     def __init__(self):
         self.today = datetime.datetime.now()
     def his_name(self):
-        return "Mr. {name} {family_name}".format(name = self.NAME, family_name = self.FAMILY_NAME)
+        return "Mr. {name} {family_name}".format(
+                name = self.NAME,
+                family_name = self.FAMILY_NAME
+            )
     def approx_day_on_earth(self):
         return self.today - self.BIRTHDATE
 
